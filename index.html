@@ -18,18 +18,6 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
-
     <style>
         .font-manrope {
             font-family: "Manrope", sans-serif;
@@ -38,14 +26,14 @@
 
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope bg-gray-100 border-2">
 
     <!-- Head Section -->
 
-    <head class="mx-auto max-w-[390px] bg-gradient-to-r from-[rgb(255, 255, 255)] to-[rgba(255, 255, 255, 0)] lg:max-w-[1170px]">
+    <head class="mx-auto max-w-[390px lg:max-w-[1170px]">
         <!-- Navbar Section -->
         <nav class="mx-auto max-w-80 mt-9 lg:max-w-7xl lg:mt-14 ">
-            <div class="navbar bg-base-100 flex items-center justify-between">
+            <div class="bg-gray-100 navbar bg-base-100 flex items-center justify-between">
                 <!-- start part (logo part) -->
                 <div>
                     <div class="flex justify-center items-center gap-1">
@@ -73,14 +61,16 @@
 
                 <!-- end part -->
                 <div class="flex items-center gap-4 ">
-                    <div class="w-12 h-12 rounded-3xl border-2 bg-white border-[rgb(233, 233, 233)] items-center hidden lg:block lg:flex justify-center">
+                    <div
+                        class="w-12 h-12 rounded-3xl bg-white items-center hidden lg:block lg:flex justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
                     </div>
-                    <div class="w-12 h-12 rounded-3xl bg-white border-2 border-[rgb(233, 233, 233)] hidden lg:block lg:flex items-center justify-center">
+                    <div
+                        class="w-12 h-12 rounded-3xl bg-white hidden lg:block lg:flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -93,24 +83,26 @@
                             <i class="fa-solid fa-arrow-right -rotate-45" style="color: #f0f2f5;"></i>
                         </div>
                     </a>
-
+ 
                     <!-- Hamburger menu-->
-                    <div class="dropdown lg:hidden">
-                        <div tabindex="0" role="button" class="btn btn-ghost">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
+                    <div class=" w-9 h-9 rounded-full bg-[#FFFFFF] flex justify-center items-center lg:hidden">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-35 p-2 shadow">
+                                <li class="font-bold"><a>Home</a></li>
+                                <li class="text-[#737373]"><a>Services</a></li>
+                                <li class="text-[#737373]"><a>Portfolio</a></li>
+                                <li class="text-[#737373]"><a>Blogs</a></li>
+                                <li class="text-[#737373]"><a>Contact Us</a></li>
+                            </ul>
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-35 p-2 shadow">
-                            <li class="font-bold"><a>Home</a></li>
-                            <li class="text-[#737373]"><a>Services</a></li>
-                            <li class="text-[#737373]"><a>Portfolio</a></li>
-                            <li class="text-[#737373]"><a>Blogs</a></li>
-                            <li class="text-[#737373]"><a>Contact Us</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -128,8 +120,7 @@
                 <h1 class="font-extrabold text-7 mt-6 mb-4 lg:text-6xl ">A barn house of this design has a <br>
                     striking appearance</h1>
                 <p class="text-sm text-[#494949] mt-6 lg:text-base lg:px-14">
-                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring
-                    weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    Are you ready to turn your dream into reality? Let Rinterio be your partner in creating a space that inspires and delights. Contact us today to schedule a consultation and discover how we can help you bring your vision to life.
                 </p>
 
                 <a
@@ -173,17 +164,14 @@
 
                         <h1 class="text-[1.5rem] font-bold lg:text-[2.5rem]">We design thoughtful, <br>
                             liveable spaces</h1>
-                        <p class="text-[0.875rem] lg:text-[1rem] font-medium text-[#494949]">The barn house captivates
-                            with its blend of rustic charm and
-                            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        <p class="text-[0.875rem] lg:text-[1rem] font-medium text-[#494949]">Rinterio is a leading building design and consulting firm dedicated to transforming your vision into reality. With a team of experienced architects, engineers, and industry experts, we offer comprehensive solutions that combine creativity, functionality, and sustainability.</p>
 
                         <div class="flex gap-6 rounded-2xl w-[335px] bg-white p-5 lg:w-[559.97px] lg:p-6">
                             <img class="w-[38.83px] h-[36.63px] lg:w-[62.13px] lg:h-[58.61px]"
                                 src="./images/commercial.png" alt="">
                             <div>
                                 <h1 class="font-extrabold text-[1rem] text-left lg:text-[1.25rem]">Commercial</h1>
-                                <p class="text-[1rem] font-medium text-left lg:pr-[103px]">The barn house captivates
-                                    with its blend of rustic charm and modern.</p>
+                                <p class="text-[1rem] text-[#494949] font-medium text-left lg:pr-[90px]">We understand the unique needs and challenges of commercial businesses and work closely with our clients to develop solutions that maximize their return on investment. </p>
                             </div>
                         </div>
 
@@ -192,15 +180,14 @@
                                 src="./images/residential.png" alt="">
                             <div>
                                 <h1 class="font-extrabold text-[1rem] text-left lg:text-[1.25rem]">Residential</h1>
-                                <p class="text-[1rem] font-medium text-left lg:pr-[103px]">The barn house captivates
-                                    with its blend of rustic charm and modern.</p>
+                                <p class="text-[1rem] text-[#494949] font-medium text-left lg:pr-[90px]">Rinterio is committed to delivering high-quality residential design services that exceed your expectations.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Right part -->
                     <div class="mx-auto w-[335px] lg:w-1/2">
-                        <img class="w-full h-[223px] lg:h-[498px]" src="./images/Rectangle.png" alt="">
+                        <img class="w-full h-[223px] lg:h-[643px]" src="./images/Rectangle.png" alt="">
                     </div>
                 </div>
             </div>
@@ -260,9 +247,7 @@
 
                 <h1 class="mt-3 text-[1.5rem] lg:text-[2.5rem] font-extrabold text-[#212121] lg:mb-4 lg:mt-2">Our Works
                     Process</h1>
-                <p class="text-[0.875rem] mt-3 lg:text-[1rem] text-[#494949] lg:px-[245px]">The barn house captivates
-                    with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
-                    accents.</p>
+                <p class="text-[0.875rem] mt-3 lg:text-[1rem] text-[#494949] lg:px-[245px]">We believe in a collaborative and client-centric approach to design. Our process is tailored to meet the unique needs of each project, ensuring that your vision is brought to life in the most effective way possible.</p>
             </div>
 
             <!-- Color card part -->
@@ -270,42 +255,38 @@
                 class="mt-5 lg:mt-7  items-center lg:justify-center lg:max-w-[1170px] mx-auto flex flex-col gap-4 lg:gap-6 lg:flex-row ">
 
                 <!-- Card No1 -->
-                <div class="max-w-[335px] lg:max-w-[275px] p-6 text-left bg-[#E7C1D3] rounded-3xl">
+                <div class="max-w-[335px] lg:max-w-[275px] h-[260px] p-9 text-left bg-[#E7C1D3] rounded-3xl">
                     <div>
                         <img src="./images/concept.png" alt="">
                         <h1 class="text-[1.25rem] font-extrabold my-2">Concept</h1>
-                        <p class="text-[1rem] text-[#494949] font-semibold">The barn house captivates with its blend of
-                            rustic charm and modern.</p>
+                        <p class="text-[1rem] text-[#494949] font-semibold">Our team will develop initial design concepts based on your input and our expertise.</p>
                     </div>
                 </div>
 
                 <!-- Card No2 -->
-                <div class="max-w-[335px] lg:max-w-[275px] p-6 text-left bg-[#EFDA6E] rounded-3xl">
+                <div class="max-w-[335px] lg:max-w-[275px] h-[260px] p-9 text-left bg-[#EFDA6E] rounded-3xl">
                     <div>
                         <img src="./images/flow-chart.png" alt="">
                         <h1 class="text-[1.25rem] font-extrabold my-2">Design Process</h1>
-                        <p class="text-[1rem] text-[#494949] font-semibold">The barn house captivates with its blend of
-                            rustic charm and modern.</p>
+                        <p class="text-[1rem] text-[#494949] font-semibold">We will work closely with you to refine the design concepts and address any feedback or changes.</p>
                     </div>
                 </div>
 
                 <!-- Card No3 -->
-                <div class="max-w-[335px] lg:max-w-[275px] p-6 text-left bg-[#A4DAC3] rounded-3xl">
+                <div class="max-w-[335px] lg:max-w-[275px] h-[260px] p-6 text-left bg-[#A4DAC3] rounded-3xl">
                     <div>
                         <img src="./images/vision.png" alt="">
                         <h1 class="text-[1.25rem] font-extrabold my-2">Supervision</h1>
-                        <p class="text-[1rem] text-[#494949] font-semibold">The barn house captivates with its blend of
-                            rustic charm and modern.</p>
+                        <p class="text-[1rem] text-[#494949] font-semibold">Our supervision services ensure that your project is executed efficiently, safely, and to the highest quality standards.</p>
                     </div>
                 </div>
 
                 <!-- Card No4 -->
-                <div class="max-w-[335px] lg:max-w-[275px] p-6 text-left bg-[#77AAEA] rounded-3xl">
+                <div class="max-w-[335px] lg:max-w-[275px] h-[260px] p-[32px] text-left bg-[#77AAEA] rounded-3xl">
                     <div>
                         <img src="./images/budget-planning.png" alt="">
                         <h1 class="text-[1.25rem] font-extrabold my-2">Budget Planning</h1>
-                        <p class="text-[1rem] text-[#494949] font-semibold">The barn house captivates with its blend of
-                            rustic charm and modern.</p>
+                        <p class="text-[1rem] text-[#494949] font-semibold">We dedicated to working within your budget constraints while delivering exceptional results.</p>
                     </div>
                 </div>
 
@@ -325,10 +306,7 @@
 
             <h1 class="mt-3 text-[1.5rem] lg:text-[2.5rem] font-extrabold text-[#212121] lg:mb-4 lg:mt-2">Our Latest
                 Portfolio</h1>
-            <p class="text-[0.875rem] mt-3 mb-4 lg:mb-8 lg:text-[1rem] text-[#494949] lg:px-[245px]">The barn house
-                captivates
-                with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
-                accents.</p>
+            <p class="text-[0.875rem] mt-3 mb-4 lg:mb-8 lg:text-[1rem] text-[#494949] lg:px-[245px]">From modern minimalist homes to sustainable commercial spaces, our portfolio showcases our expertise in design, functionality, and innovation.</p>
 
             <!-- Latest work grid section -->
             <div class="grid max-w-[335px] lg:max-w-[1180px] grid-cols-1 lg:grid-cols-12 gap-6 mx-auto">
@@ -340,10 +318,8 @@
                         </div>
 
                         <div class="flex flex-col text-left w-full lg:w-3/5">
-                            <h1 class="text-[1.5rem] text-[#494949] font-extrabold">Commercial</h1>
-                            <p class="text-[1rem] font-semibold mb-5 mt-4 ">The barn house captivates with its blend of
-                                rustic charm
-                                and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                            <h1 class="text-[1.5rem] text-[#494949] font-extrabold">Commercial Projects</h1>
+                            <p class="text-[1rem] font-semibold text-[#494949] mb-5 mt-4 ">We understand the unique needs and challenges of commercial businesses and work closely with our clients to develop solutions that align with their goals and objectives.</p>
                             <div class="flex items-center gap-1 ">
                                 <h1 class="text-[1.25rem] font-extrabold">View Details</h1>
                                 <div class="w-8 h-8 rounded-full bg-[#ABEF5F] flex justify-center items-center">
@@ -360,7 +336,7 @@
 
                 <!-- Grid 2 -->
                 <div class=" lg:col-span-4 p-7 border-2 border-[#e9e9e9] rounded-xl">
-                    <img class="w-full lg:h-full" src="./images/img2.png" alt="">
+                    <img class="w-full h-[197px] lg:h-full" src="./images/img2.png" alt="">
                 </div>
 
                 <!-- Grid 3 -->
@@ -375,10 +351,8 @@
                         </div>
 
                         <div class="flex flex-col text-left lg:w-3/5">
-                            <h1 class="text-[1.5rem] text-[#494949] font-extrabold">Commercial</h1>
-                            <p class="text-[1rem] font-semibold mb-5 mt-4 ">The barn house captivates with its blend of
-                                rustic charm
-                                and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                            <h1 class="text-[1.5rem] text-[#494949] font-extrabold">Residential Projects</h1>
+                            <p class="text-[1rem] font-semibold mb-5 mt-4 text-[#494949]">Our team of experienced architects and designers is dedicated to creating homes that are not only beautiful but also comfortable, functional, and sustainable.</p>
                             <div class="flex items-center gap-1 ">
                                 <h1 class="text-[1.25rem] font-extrabold">View Details</h1>
                                 <div class="w-8 h-8 rounded-full bg-[#ABEF5F] flex justify-center items-center">
@@ -422,7 +396,7 @@
                 </p>
 
                 <!-- News Card -->
-                <div class="flex flex-col lg:flex-row gap-6">
+                <div class="flex flex-col lg:flex-row gap-6 pb-6 lg:pb-0">
 
                     <!-- Card No1 -->
                     <div class="max-w-full bg-white mx-auto rounded-xl">
@@ -578,7 +552,8 @@
         </div>
 
         <!-- Connect Section -->
-        <div class="mx-auto pt-[20px] mt-4 pb-8 bg-[url('./images/bg.jpg')] bg-cover text-center lg:max-w-[1520px] lg:pb-[115px] lg:pt-[105px]">
+        <div
+            class="mx-auto pt-[20px] mt-4 pb-8 bg-[url('./images/bg.jpg')] bg-cover text-center lg:max-w-[1520px] lg:pb-[115px] lg:pt-[105px]">
             <div class="max-w-[390px] mb-8 lg:mb-[70px] lg:max-w-[970px] text-center mx-auto">
 
                 <div class="rounded-3xl mx-auto mt-8 lg:mt-0 bg-[#ABEF5F33] flex justify-center gap-1 w-[248px] py-1">
@@ -592,19 +567,22 @@
 
                 <h1 class="mt-3 text-[1.5rem] lg:text-[2.5rem] font-extrabold text-[#212121] lg:mb-4 lg:mt-2">Let’s
                     Discuss Next Project</h1>
-                <p class="text-[0.875rem] mt-3 mb-4 lg:mb-8 lg:text-[1rem] text-[#494949] lg:px-[245px]">The barn house
-                    captivates
-                    with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
-                    accents.
+                <p class="text-[0.875rem] mt-3 mb-4 lg:mb-8 lg:text-[1rem] text-[#494949] lg:px-[150px]"><b>Ready to embark on your next project?</b> Contact Rinterio today to discuss your vision and learn how we can help you bring it to life. <br>
+                <b>Our team is eager to connect with you and provide personalized service.</b>
                 </p>
 
                 <!-- Form Section -->
                 <form action="" class="grid grid-cols-12 gap-6">
-                    <input class="col-span-12 lg:col-span-6 rounded-3xl placeholder:text-[1rem] p-4" placeholder="First Name*" type="text" name="" id="">
-                    <input class="col-span-12 lg:col-span-6 rounded-3xl placeholder:text-[1rem] p-4" placeholder="Last Name*" type="text" name="" id="">
-                    <input class="col-span-12 lg:col-span-6 rounded-3xl placeholder:text-[1rem] p-4" placeholder="Phone Number*" type="text" name="" id="">
-                    <input class="col-span-12 lg:col-span-6 rounded-3xl placeholder:text-[1rem] p-4" placeholder="Email Number*" type="email" name="" id="">
-                    <textarea class="col-span-12 rounded-3xl p-5" placeholder="Write your message here" name="" id="" cols="30" rows="10"></textarea>
+                    <input class="col-span-12 lg:col-span-6 rounded-3xl placeholder:text-[1rem] p-4"
+                        placeholder="First Name*" type="text" name="" id="">
+                    <input class="col-span-12 lg:col-span-6 rounded-3xl placeholder:text-[1rem] p-4"
+                        placeholder="Last Name*" type="text" name="" id="">
+                    <input class="col-span-12 lg:col-span-6 rounded-3xl placeholder:text-[1rem] p-4"
+                        placeholder="Phone Number*" type="text" name="" id="">
+                    <input class="col-span-12 lg:col-span-6 rounded-3xl placeholder:text-[1rem] p-4"
+                        placeholder="Email Number*" type="email" name="" id="">
+                    <textarea class="col-span-12 resize-none rounded-3xl p-5" placeholder="Write your message here"
+                        name="" id="" cols="30" rows="10"></textarea>
                     <a class="col-span-12 btn rounded-3xl bg-[#ABEF5F] text-[1.25rem] font-bold px-5 lg:flex">Send Mail
                         <div class="w-8 h-8 rounded-full bg-[#1C1C1C] flex justify-center items-center">
                             <i class="fa-solid fa-arrow-right -rotate-45" style="color: #f0f2f5;"></i>
@@ -629,13 +607,11 @@
                 <a class="text-[1.75rem] text-white lg:text-[2rem] font-extrabold">Rinterio</a>
             </div>
 
-            <p class="text-[0.875rem] mt-3 pb-4 lg:pb-8 lg:text-[1rem] text-[#737373] px-8 lg:px-[380px]">The barn house
-                captivates
-                with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
-                accents.
+            <p class="text-[0.875rem] mt-3 pb-4 lg:pb-8 lg:text-[1rem] font-semibold text-[#737373] px-8 lg:px-[380px]">Whether you're looking to build a new home, renovate an existing property, or develop a commercial project, Rinterio is your trusted partner. We are committed to providing exceptional service, exceeding expectations, and delivering results that last.
             </p>
 
-            <div class="max-w-[311px] lg:max-w-[778px] flex flex-col item-center lg:flex-row gap-8 lg:gap-[120px] mx-auto">
+            <div
+                class="max-w-[311px] lg:max-w-[778px] flex flex-col justify-center item-center lg:flex-row gap-8 lg:gap-[120px] mx-auto">
                 <a class="no-underline text-[#E9E9E9]" href="">Home</a>
                 <a class="no-underline text-[#E9E9E9]" href="">Services</a>
                 <a class="no-underline text-[#E9E9E9]" href="">Portfolio</a>
